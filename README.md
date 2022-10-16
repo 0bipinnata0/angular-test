@@ -4,3 +4,4 @@ search Image
 
 ng generate directive class 
 
+ng generate directive times
