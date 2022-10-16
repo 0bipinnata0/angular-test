@@ -70,9 +70,9 @@
         (input)="onMilesChange(aMiles.value)"
       />
     </div>
-    <div class="col">
+    <div class="col" *ngIf="(miles | convert: 'km') > 100">
       <label><b>Miles</b></label>
-      <div>{{ miles | convert }}</div>
+      <div>{{ miles | convert: "km" | number: "1.0-2" }}</div>
     </div>
   </div>
 </div>
