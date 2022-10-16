@@ -42,10 +42,9 @@
     </div>
     <div class="col">
       <label><b>Payment Amount</b></label>
-      <div>{{ amount | currency:"JPY" }}</div>
+      <div>{{ amount | currency: "JPY" }}</div>
     </div>
   </div>
-
 
   <div class="row">
     <div class="form-group col">
@@ -58,7 +57,22 @@
     </div>
     <div class="col">
       <label><b>Height</b></label>
-      <div>{{ height | number: '1.1-3' }}</div>
+      <div>{{ height | number: "1.1-3" }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label for="">Miles</label>
+      <input
+        class="form-control"
+        #aMiles
+        (input)="onMilesChange(aMiles.value)"
+      />
+    </div>
+    <div class="col">
+      <label><b>Miles</b></label>
+      <div>{{ miles | convert }}</div>
     </div>
   </div>
 </div>
