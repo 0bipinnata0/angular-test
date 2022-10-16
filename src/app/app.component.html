@@ -3,13 +3,21 @@
     <div class="box column is-one-third">
       <h1 class="title has-text-centered">Typing Challenge</h1>
 
-      <p class="has-text-centered">Randomly generated text should go here</p>
+      <p class="has-text-centered">
+        <span
+          [class]="compare(letter, enterText[i])"
+          *ngFor="let letter of randomText.split(''); let i = index"
+          >{{ letter }}</span
+        >
+      </p>
 
       <div class="field">
-        <input class="input" />
+        <!-- refer https://angular.io/guide/user-input#get-user-input-from-a-template-reference-variable -->
+        <!-- replace onInput($event.target.value) -->
+        <input #useInput class="input" (input)="onInput(useInput.value)" />
       </div>
 
-      <div class="box has-text-centered">
+      <div *ngIf="show" class="box has-text-centered">
         <h1>success</h1>
       </div>
     </div>
