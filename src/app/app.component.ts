@@ -3,54 +3,54 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  length = 0
-  password = ""
-  includeLetters = false
-  includeNumbers = false
+  length = 0;
+  password = '';
+  includeLetters = false;
+  includeNumbers = false;
   includeSymbols = false;
 
-  onChangeUseLetter (){
+  onChangeUseLetter() {
     this.includeLetters = !this.includeLetters;
   }
 
-  onChangeUseNumbers(){
+  onChangeUseNumbers() {
     this.includeNumbers = !this.includeNumbers;
   }
 
-  onChangeUseSymbols(){
+  onChangeUseSymbols() {
     this.includeSymbols = !this.includeSymbols;
   }
 
   onButtonClick() {
-    const numbers = "0123456789"
-    const letters = "abcdefghijklmnopqrstuvwxyz"
-    const symbols = "!@#$%^&*()"
-    let validChars = "";
-    if(this.includeNumbers){
-      validChars+=numbers
+    const numbers = '0123456789';
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
+    const symbols = '!@#$%^&*()';
+    let validChars = '';
+    if (this.includeNumbers) {
+      validChars += numbers;
     }
-    if(this.includeLetters){
-      validChars+=letters;
+    if (this.includeLetters) {
+      validChars += letters;
     }
-    if(this.includeSymbols){
-      validChars+=symbols;
+    if (this.includeSymbols) {
+      validChars += symbols;
     }
-    let generatedPassword = ""
-    for(let i = 0;i<this.length;i++){
-      const index = Math.floor(Math.random()*validChars.length);
+    let generatedPassword = '';
+    for (let i = 0; i < this.length; i++) {
+      const index = Math.floor(Math.random() * validChars.length);
       generatedPassword += validChars[index];
     }
     this.password = generatedPassword;
   }
 
-  onChangeLength (value:string){
+  onChangeLength(value: string) {
     const parsedValue = parseInt(value);
-    if(!isNaN(parsedValue)){
+    console.info('>>>>>>>>>>', parsedValue);
+    if (!isNaN(parsedValue)) {
       this.length = parsedValue;
     }
   }
-
 }
