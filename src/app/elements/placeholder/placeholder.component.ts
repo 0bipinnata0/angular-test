@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PlaceholderComponent implements OnInit {
   constructor() {}
   @Input() header = true;
+  @Input() length = 3;
 
   ngOnInit(): void {}
 }

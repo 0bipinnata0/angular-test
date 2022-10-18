@@ -18,3 +18,5 @@ npm i semantic-ui-css
 
 
 ng g c elements/Placeholder 
+
+ng g directive elements/Times
