@@ -20,3 +20,7 @@ npm i semantic-ui-css
 ng g c elements/Placeholder 
 
 ng g directive elements/Times
+
+
+ng g m Shared
+ng g c shared/Divider
