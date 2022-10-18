@@ -6,8 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./divider.component.css']
 })
 export class DividerComponent implements OnInit {
-
-  @Input() title = ''
   constructor() { }
 
   ngOnInit(): void {
