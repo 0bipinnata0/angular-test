@@ -15,3 +15,6 @@ Widget Defines some reusable components that will be used in multiple other modu
 
 
 npm i semantic-ui-css
+
+
+ng g c elements/Placeholder 
