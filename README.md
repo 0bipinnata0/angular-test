@@ -24,3 +24,7 @@ ng g directive elements/Times
 
 ng g m Shared
 ng g c shared/Divider
+
+
+
+ng g c elements/Segment
