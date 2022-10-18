@@ -11,3 +11,7 @@ Routed Same as a 'Domain' module, but thesse components are tied to routes(only 
 Routing Defines routing (show TodoList component when a user is at a route of '/todos')
 Service Defines services that will be used in multiple parts of the app
 Widget Defines some reusable components that will be used in multiple other modules.
+
+
+
+npm i semantic-ui-css
