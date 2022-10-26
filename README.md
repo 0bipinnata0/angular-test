@@ -35,3 +35,8 @@ ng g c collections/Companies
 ng g c collections/Biography
 
 ng g c collections/Tabs
+
+
+
+ng g c views/ViewsHome
+ng g c views/Statistics
