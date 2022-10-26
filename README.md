@@ -31,3 +31,7 @@ ng g c elements/Segment
 
 
 ng g c collections/Table
+
+ng g c collections/Partners
+ng g c collections/Companies
+ng g c collections/Biography
