@@ -40,3 +40,7 @@ ng g c collections/Tabs
 
 ng g c views/ViewsHome
 ng g c views/Statistics
+
+
+
+ng g c views/ItemList
