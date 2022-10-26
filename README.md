@@ -28,8 +28,6 @@ ng g c shared/Divider
 
 
 ng g c elements/Segment
-
-
 ng g c collections/Table
 
 ng g c collections/Partners
