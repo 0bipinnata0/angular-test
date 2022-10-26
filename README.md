@@ -48,3 +48,7 @@ ng g c views/ItemList
 
 ng g c mods/ModsHome
 ng g c mods/Modal
+
+
+
+ng g c mods/Accordion
