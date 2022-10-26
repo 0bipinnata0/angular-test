@@ -5,7 +5,14 @@
 <div class="ui grid">
   <div class="four wide column">
     <div class="ui vertical fluid tabular menu">
-      <a class="item" routerLink="./" routerLinkActive="active"> Biography </a>
+      <a
+        class="item"
+        routerLink="./"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Biography
+      </a>
       <a
         class="item"
         [routerLink]="['./', 'companies']"
