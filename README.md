@@ -33,3 +33,5 @@ ng g c collections/Table
 ng g c collections/Partners
 ng g c collections/Companies
 ng g c collections/Biography
+
+ng g c collections/Tabs
