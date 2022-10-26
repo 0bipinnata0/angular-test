@@ -44,3 +44,7 @@ ng g c views/Statistics
 
 
 ng g c views/ItemList
+
+
+ng g c mods/ModsHome
+ng g c mods/Modal
